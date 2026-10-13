@@ -16,7 +16,7 @@ A static, single-page wishlist hosted on GitHub Pages. Visitors only view items 
 
 `text` (link text, required), `url` (required), `price` (free text, fallback), `photo` (URL or `images/` path), `added` (`YYYY-MM-DD`), `note` (optional), `live: false` (skip the price check).
 
-Items sort newest first by `added`. The store name is derived from the URL hostname (`storeName()` in `index.html`; add special cases to `STORE_NAMES`).
+Items sort newest first by `added`; undated items come after dated ones, in file order. A "Sort by" dropdown also offers price low-to-high and high-to-low, using the live price when there is one, otherwise the first number in the typed `price`. Items with no price go last. The store name is derived from the URL hostname (`storeName()` in `index.html`; add special cases to `STORE_NAMES`).
 
 ## Live prices
 

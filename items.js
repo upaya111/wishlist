@@ -27,6 +27,14 @@ const SETTINGS = {
 
 const ITEMS = [
   {
+    text: "Retroid Pocket Duo handheld",
+    url: "https://www.goretroid.com/products/retroid-pocket-duo-handheld?variant=54778206093536",
+    price: "$269.00",
+    photo: "https://cdn.shopify.com/s/files/1/0321/7516/1479/files/371a9eb351470bfb47a1cc01a4b8dc63_6374c0a5-9602-4dae-acbf-96de650ed086.jpg?v=1789029491&width=160",
+    added: "2026-10-13",
+    note: "Clear Purple, 8GB + 128GB",
+  },
+  {
     text: "Stanley Classic vacuum bottle, 2 qt",
     url: "https://www.amazon.com/dp/B000FZX93U",
     price: "$50.50",

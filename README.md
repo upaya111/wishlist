@@ -25,7 +25,7 @@ Open `items.js`, copy one of the `{ ... },` blocks, paste it into the list, and 
 },
 ```
 
-Items are sorted newest first by `added`, so the order you write them in doesn't matter. The store name ("Target", "Amazon") is filled in automatically from the link.
+Items are sorted newest first by `added`, so the order you write them in doesn't matter (items with no date go last, in the order you wrote them). Visitors can also sort by price with the "Sort by" menu at the top. The store name ("Target", "Amazon") is filled in automatically from the link.
 
 **Getting a photo URL:** on the product page, long-press (phone) or right-click (computer) the main product image and choose "Copy image address", then paste that as `photo`. If a store blocks that, save the image into `images/` and use `"images/filename.jpg"`. If a photo ever fails to load, a "no image" box shows instead.
 
@@ -113,7 +113,7 @@ jobs:
             echo "No changes."
           else
             git commit -m "Update prices"
-            git pull --rebase
+            git pull --rebase -X theirs   # on a clash with another run, keep this newer reading
             git push
           fi
 ```

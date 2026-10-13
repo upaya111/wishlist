@@ -47,12 +47,19 @@
     .oos { color: #c00; }
     .small { font-size: .85em; color: #555; }
     .foot { margin-top: 10px; font-size: .85em; color: #555; }
+    .sort { margin: 0 0 .6em; font-size: .9em; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1 id="title">Wishlist</h1>
     <p id="subtitle"></p>
+    <p class="sort"><label>Sort by
+      <select id="sort">
+        <option value="new">newest</option>
+        <option value="low">price, low to high</option>
+        <option value="high">price, high to low</option>
+      </select></label></p>
     <hr>
     <table><tbody id="list"></tbody></table>
     <p class="foot" id="updated"></p>
@@ -81,7 +88,7 @@
       }
 
       // Store name from the link, e.g. "www.target.com" -> "Target"
-      var STORE_NAMES = { "amzn.to": "Amazon", "a.co": "Amazon", "etsy.com": "Etsy", "rei.com": "REI", "ikea.com": "IKEA" };
+      var STORE_NAMES = { "amzn.to": "Amazon", "a.co": "Amazon", "etsy.com": "Etsy", "rei.com": "REI", "ikea.com": "IKEA", "goretroid.com": "Retroid" };
       function storeName(url) {
         try {
           var host = new URL(url).hostname.replace(/^www\d?\./, "").toLowerCase();
@@ -138,18 +145,29 @@
         return bd - ad || a._i - b._i;
       });
 
+      // First number in a typed price: "$1,299.99" -> 1299.99, "~$40" -> 40, "" -> null
+      function parsePrice(s) {
+        var m = /\d[\d,]*(\.\d+)?/.exec(s || "");
+        return m ? parseFloat(m[0].replace(/,/g, "")) : null;
+      }
+
       function render(prices) {
         var list = document.getElementById("list");
         var newest = null;
         var anyLive = false;
+        var rows = [];
 
         items.forEach(function (it) {
           var live = liveFor(it, prices);
           var priceText = it.price || "";
+          var priceValue = parsePrice(it.price);
           var outOfStock = false;
           if (live) {
             anyLive = true;
-            if (typeof live.price === "number") priceText = formatMoney(live.price, live.currency);
+            if (typeof live.price === "number") {
+              priceText = formatMoney(live.price, live.currency);
+              priceValue = live.price;
+            }
             if (live.inStock === false) outOfStock = true;
           }
 
@@ -207,10 +225,27 @@
           }
 
           tr.appendChild(info);
-          list.appendChild(tr);
+          rows.push({ tr: tr, price: priceValue });
         });
 
+        // Price sorts put items with no price last; ties keep the newest-first order.
+        var select = document.getElementById("sort");
+        function draw() {
+          var mode = select.value;
+          var sorted = rows.map(function (r, i) { r.i = i; return r; });
+          if (mode !== "new") {
+            sorted.sort(function (a, b) {
+              if (a.price == null || b.price == null) return (a.price == null) - (b.price == null) || a.i - b.i;
+              return (mode === "low" ? a.price - b.price : b.price - a.price) || a.i - b.i;
+            });
+          }
+          sorted.forEach(function (r) { list.appendChild(r.tr); });
+        }
+        select.onchange = draw;
+        draw();
+
         if (!items.length) {
+          select.parentNode.parentNode.remove();
           var tr = document.createElement("tr");
           var td = el("td", null, "No items.");
           tr.appendChild(td);

@@ -38,6 +38,6 @@ jobs:
             echo "No changes."
           else
             git commit -m "Update prices"
-            git pull --rebase
+            git pull --rebase -X theirs   # on a clash with another run, keep this newer reading
             git push
           fi
