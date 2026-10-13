@@ -1,0 +1,317 @@
+// ============================================================
+//  YOUR WISHLIST — this is the only file you need to edit.
+// ============================================================
+
+const SETTINGS = {
+  title: "My Wishlist",
+  subtitle: "",   // optional line under the title
+};
+
+// Add one block per item. Copy an existing block, paste it, and change
+// the values. Order doesn't matter: the page sorts newest first by "added".
+//
+//   text   – what the link says (required)
+//   url    – link to the product page (required)
+//   price  – any text you like: "$24.99", "~$40", "$15–20" (optional)
+//   photo  – an image URL, or a file you put in the images folder,
+//            e.g. "images/blanket.jpg" (optional)
+//   added  – date you added it, as "YYYY-MM-DD" (optional)
+//   note   – a short extra detail like a size or color (optional)
+//   live   – set to false to never auto-check this item's price (optional)
+//
+// The price you type is what shows unless the daily price check (see README)
+// successfully reads a current price from the store, which then replaces it.
+//
+// Watch the punctuation: each value in "quotes", a comma after each line,
+// and a comma after each closing } brace.
+
+const ITEMS = [
+  {
+    text: "Stanley Classic vacuum bottle, 2 qt",
+    url: "https://www.amazon.com/dp/B000FZX93U",
+    price: "$50.50",
+    photo: "https://m.media-amazon.com/images/I/31eYFVW4y-L._SL160_.jpg",
+    added: "",
+    note: "Hammertone Green",
+  },
+  {
+    text: "Iwatani 35FW single-burner butane stove",
+    url: "https://www.amazon.com/dp/B00522F2R2",
+    price: "$129.99",
+    photo: "https://m.media-amazon.com/images/I/41iRT13NRxL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "AOZBZ handheld document scanner",
+    url: "https://www.amazon.com/dp/B073119ZSJ",
+    price: "$56.99",
+    photo: "https://m.media-amazon.com/images/I/31-+JXa6djL._SL160_.jpg",
+    added: "",
+    note: "Black",
+  },
+  {
+    text: "Studiologic SL88 GT MK2 88-key MIDI keyboard",
+    url: "https://www.amazon.com/dp/B0FCMHN6GM",
+    price: "$999.95",
+    photo: "https://m.media-amazon.com/images/I/31x8EDG1H7L._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "HHKB Studio keyboard",
+    url: "https://www.amazon.com/dp/B0CKG1JN7L",
+    price: "$317.99",
+    photo: "https://m.media-amazon.com/images/I/318vHO7kEbL._SL160_.jpg",
+    added: "",
+    note: "Charcoal, printed keys",
+  },
+  {
+    text: "Prechen 12.3 inch stretched bar display",
+    url: "https://www.amazon.com/dp/B0GRGZ3HQ6",
+    price: "$79.99",
+    photo: "https://m.media-amazon.com/images/I/41QDL2e3sIL._SL160_.jpg",
+    added: "",
+    note: "Black",
+  },
+  {
+    text: "AYN Thor Pro dual-screen gaming handheld",
+    url: "https://www.amazon.com/dp/B0FV3HKG9P",
+    price: "",
+    photo: "https://m.media-amazon.com/images/I/31SwhxhrSFL._SL160_.jpg",
+    added: "",
+    note: "12GB RAM, 256GB",
+  },
+  {
+    text: "Couchmaster CYCON³ Horizonlight Bar lap desk",
+    url: "https://www.amazon.com/dp/B00CCHRJ2Q",
+    price: "$239.00",
+    photo: "https://m.media-amazon.com/images/I/31xcsVk0L9L._SL160_.jpg",
+    added: "",
+    note: "Black",
+  },
+  {
+    text: "WD Blue 8TB internal hard drive",
+    url: "https://www.amazon.com/dp/B0CMQ8XBBR",
+    price: "$324.99",
+    photo: "https://m.media-amazon.com/images/I/41hHFQ8xydL._SL160_.jpg",
+    added: "",
+    note: "WD80EAAZ, 3.5 inch",
+  },
+  {
+    text: "QNAP TR-004 4-bay USB-C drive enclosure",
+    url: "https://www.amazon.com/dp/B07K4RC7X9",
+    price: "$201.86",
+    photo: "https://m.media-amazon.com/images/I/310l7keevAS._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "AMOLOLO round rattan bowl basket, 8 inch",
+    url: "https://www.amazon.com/dp/B0B2PGNY18",
+    price: "$16.99",
+    photo: "https://m.media-amazon.com/images/I/41pz-yOrUxL._SL160_.jpg",
+    added: "",
+    note: "Dark brown, size S",
+  },
+  {
+    text: "Gazzyt foldable racing sim cockpit",
+    url: "https://www.amazon.com/dp/B0FKGVMBHB",
+    price: "$159.99",
+    photo: "https://m.media-amazon.com/images/I/4153gZ4ZbvL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Beethoven: Six Great Piano Trios in Full Score (Dover)",
+    url: "https://www.amazon.com/dp/0486253988",
+    price: "$22.95",
+    photo: "https://m.media-amazon.com/images/I/5126K1HECwL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Beethoven for Classical Guitar: 50 Selections",
+    url: "https://www.amazon.com/dp/9918956038",
+    price: "$14.96",
+    photo: "https://m.media-amazon.com/images/I/41Js1eaBxbL._SL160_.jpg",
+    added: "",
+    note: "Matthew Ellul",
+  },
+  {
+    text: "Beethoven: Six Great Overtures in Full Score (Dover)",
+    url: "https://www.amazon.com/dp/0486247899",
+    price: "$27.72",
+    photo: "https://m.media-amazon.com/images/I/51q5hab8fgL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "MOZA R3 racing wheel and pedals bundle",
+    url: "https://www.amazon.com/dp/B0DTTBMLTF",
+    price: "$279.79",
+    photo: "https://m.media-amazon.com/images/I/31Jz5eyujhL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Pemberly Row 4-drawer wood filing cabinet",
+    url: "https://www.amazon.com/dp/B0DYJS9FR6",
+    price: "",
+    photo: "https://m.media-amazon.com/images/I/313Gin3UhFL._SL160_.jpg",
+    added: "",
+    note: "Brown",
+  },
+  {
+    text: "Bach: Little Notebook for Anna Magdalena Bach, piano",
+    url: "https://www.amazon.com/dp/B001M749TS",
+    price: "$24.95",
+    photo: "https://m.media-amazon.com/images/I/31tm5Q996FL._SL160_.jpg",
+    added: "",
+    note: "Edition without fingerings",
+  },
+  {
+    text: "Keith Jarrett: The Köln Concert",
+    url: "https://www.amazon.com/dp/B0031TWLNQ",
+    price: "$44.99",
+    photo: "https://m.media-amazon.com/images/I/51FePTvS0iL._SL160_.jpg",
+    added: "",
+    note: "Vinyl",
+  },
+  {
+    text: "Yosukata 13.5 inch carbon steel wok",
+    url: "https://www.amazon.com/dp/B08HMXMG2H",
+    price: "$94.99",
+    photo: "https://m.media-amazon.com/images/I/416jBEuB3PL._SL160_.jpg",
+    added: "",
+    note: "Flat bottom",
+  },
+  {
+    text: "Bach: Brandenburg Concertos and Orchestral Suites in Full Score (Dover)",
+    url: "https://www.amazon.com/dp/0486233766",
+    price: "$20.54",
+    photo: "https://m.media-amazon.com/images/I/512jWe-jvRL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Beethoven: Missa Solemnis in Full Score (Dover)",
+    url: "https://www.amazon.com/dp/0486268942",
+    price: "$26.39",
+    photo: "https://m.media-amazon.com/images/I/51-9ctcOlYL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Kandinsky (Taschen Basic Art)",
+    url: "https://www.amazon.com/dp/3836507463",
+    price: "$19.85",
+    photo: "https://m.media-amazon.com/images/I/41HNI0t2GZL._SL160_.jpg",
+    added: "",
+    note: "Hajo Düchting, hardcover",
+  },
+  {
+    text: "Reger: Three Suites for Solo Cello, Op. 131c",
+    url: "https://www.amazon.com/dp/B0DF86G21Z",
+    price: "$26.09",
+    photo: "https://m.media-amazon.com/images/I/31LmzlJdcjL._SL160_.jpg",
+    added: "",
+    note: "Urtext edition",
+  },
+  {
+    text: "Schumann: Scenes from Childhood, Op. 15, piano",
+    url: "https://www.amazon.com/dp/B00076PIVI",
+    price: "$10.95",
+    photo: "https://m.media-amazon.com/images/I/21QIfknghJL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Bach: Six Partitas, BWV 825–830, piano",
+    url: "https://www.amazon.com/dp/B08R3QDVGC",
+    price: "$32.95",
+    photo: "https://m.media-amazon.com/images/I/31qjC06OaHL._SL160_.jpg",
+    added: "",
+    note: "Urtext, hardcover",
+  },
+  {
+    text: "Beethoven: Complete Variations for Solo Piano (Dover)",
+    url: "https://www.amazon.com/dp/0486251888",
+    price: "$24.24",
+    photo: "https://m.media-amazon.com/images/I/41EWWVWdbAL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Schubert: Complete Sonatas for Pianoforte Solo (Dover)",
+    url: "https://www.amazon.com/dp/0486226476",
+    price: "$24.09",
+    photo: "https://m.media-amazon.com/images/I/51mgIiQ7GHL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Haydn: Complete Piano Sonatas, Vol. 1 (Nos. 1–29)",
+    url: "https://www.amazon.com/dp/0486247260",
+    price: "$18.95",
+    photo: "https://m.media-amazon.com/images/I/415P0s9rqhL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Messiaen: Vingt Regards sur l'Enfant-Jésus, piano",
+    url: "https://www.amazon.com/dp/B0029U2PBQ",
+    price: "$67.99",
+    photo: "https://m.media-amazon.com/images/I/31KhEb6dIYL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Beethoven: Symphonies Nos. 8 and 9 in Full Score (Dover)",
+    url: "https://www.amazon.com/dp/0486260356",
+    price: "$24.92",
+    photo: "https://m.media-amazon.com/images/I/51hRAMbP7dL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Beethoven: Complete Piano Concertos in Full Score (Dover)",
+    url: "https://www.amazon.com/dp/0486245632",
+    price: "$39.95",
+    photo: "https://m.media-amazon.com/images/I/41O9XCoUoNL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Beethoven: Complete Violin Sonatas (Dover)",
+    url: "https://www.amazon.com/dp/0486262774",
+    price: "$25.17",
+    photo: "https://m.media-amazon.com/images/I/516eVa274nL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "Mozart: Complete Sonatas and Fantasies for Solo Piano (Dover)",
+    url: "https://www.amazon.com/dp/0486292223",
+    price: "$22.88",
+    photo: "https://m.media-amazon.com/images/I/41wgouQmFqL._SL160_.jpg",
+    added: "",
+    note: "",
+  },
+  {
+    text: "The Complete Guide to Handmade Stained Glass",
+    url: "https://www.amazon.com/dp/B0CDQY96JY",
+    price: "$14.66",
+    photo: "https://m.media-amazon.com/images/I/51jvyxIXQKL._SL160_.jpg",
+    added: "",
+    note: "Rosie Linebaugh",
+  },
+  {
+    text: "乙嫁語り (A Bride's Story), volumes 1–12",
+    url: "https://www.amazon.com/dp/B088N4WZ7S",
+    price: "$66.00",
+    photo: "https://m.media-amazon.com/images/I/61lCnu4s+dL._SL160_.jpg",
+    added: "",
+    note: "Japanese edition",
+  },
+];

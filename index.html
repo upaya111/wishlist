@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wishlist</title>
+  <meta name="robots" content="noindex">
+  <style>
+    body {
+      margin: 0;
+      background: #fff;
+      color: #000;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    .wrap { max-width: 640px; margin: 0 auto; padding: 12px 12px 32px; }
+    h1 { font-size: 1.7em; margin: .4em 0 .3em; }
+    hr { border: 0; border-top: 1px solid #999; margin: 0; }
+
+    a { color: #00e; }
+    a:visited { color: #551a8b; }
+    a:active { color: #e00; }
+
+    table { width: 100%; border-collapse: collapse; }
+    td { vertical-align: top; padding: 10px 0; border-bottom: 1px solid #999; }
+    td.pic { width: 84px; padding-right: 12px; }
+    .pic img, .pic .none {
+      display: block;
+      width: 80px;
+      height: 80px;
+      border: 1px solid #000;
+      object-fit: contain;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    .pic .none {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+    }
+    .pic a { text-decoration: none; }
+    .name { font-size: 1.05em; }
+    .oos { color: #c00; }
+    .small { font-size: .85em; color: #555; }
+    .foot { margin-top: 10px; font-size: .85em; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 id="title">Wishlist</h1>
+    <p id="subtitle"></p>
+    <hr>
+    <table><tbody id="list"></tbody></table>
+    <p class="foot" id="updated"></p>
+  </div>
+
+  <script src="items.js"></script>
+  <script>
+    (function () {
+      var settings = typeof SETTINGS !== "undefined" ? SETTINGS : {};
+      var items = typeof ITEMS !== "undefined" ? ITEMS.slice() : [];
+
+      if (settings.title) {
+        document.getElementById("title").textContent = settings.title;
+        document.title = settings.title;
+      }
+      var sub = document.getElementById("subtitle");
+      if (settings.subtitle) sub.textContent = settings.subtitle; else sub.remove();
+
+      // "2026-10-10" -> Date at local midnight (avoids off-by-one timezone shifts)
+      function parseDate(s) {
+        var m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec((s || "").trim());
+        return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
+      }
+      function formatDate(d) {
+        return d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+      }
+
+      // Store name from the link, e.g. "www.target.com" -> "Target"
+      var STORE_NAMES = { "amzn.to": "Amazon", "a.co": "Amazon", "etsy.com": "Etsy", "rei.com": "REI", "ikea.com": "IKEA" };
+      function storeName(url) {
+        try {
+          var host = new URL(url).hostname.replace(/^www\d?\./, "").toLowerCase();
+          if (STORE_NAMES[host]) return STORE_NAMES[host];
+          var parts = host.split(".");
+          var base = parts.length > 2 && parts[parts.length - 2].length <= 3 ? parts[parts.length - 3] : parts[parts.length - 2];
+          return base.charAt(0).toUpperCase() + base.slice(1);
+        } catch (e) { return ""; }
+      }
+
+      function formatMoney(n, cur) {
+        try {
+          return new Intl.NumberFormat(undefined, { style: "currency", currency: cur || "USD" }).format(n);
+        } catch (e) { return "$" + n.toFixed(2); }
+      }
+
+      // Live readings older than this are ignored and your typed price is shown instead.
+      var MAX_AGE_DAYS = 10;
+      function liveFor(it, prices) {
+        if (!it.url || it.live === false || !prices || !prices.items) return null;
+        var p = prices.items[it.url];
+        if (!p || !p.checked) return null;
+        var age = (Date.now() - new Date(p.checked).getTime()) / 864e5;
+        return age <= MAX_AGE_DAYS ? p : null;
+      }
+
+      function loadPrices() {
+        if (!window.fetch || location.protocol === "file:") return Promise.resolve(null);
+        var timeout = new Promise(function (res) { setTimeout(function () { res(null); }, 2500); });
+        var req = fetch("prices.json", { cache: "no-cache" })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .catch(function () { return null; });
+        return Promise.race([req, timeout]);
+      }
+
+      function el(tag, cls, text) {
+        var e = document.createElement(tag);
+        if (cls) e.className = cls;
+        if (text != null) e.textContent = text;
+        return e;
+      }
+      function link(url) {
+        var a = document.createElement("a");
+        a.href = url;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        return a;
+      }
+
+      items = items.filter(function (it) { return it && it.text; });
+      items.forEach(function (it, i) { it._d = parseDate(it.added); it._i = i; });
+      items.sort(function (a, b) {
+        var ad = a._d ? a._d.getTime() : -Infinity, bd = b._d ? b._d.getTime() : -Infinity;
+        return bd - ad || a._i - b._i;
+      });
+
+      function render(prices) {
+        var list = document.getElementById("list");
+        var newest = null;
+        var anyLive = false;
+
+        items.forEach(function (it) {
+          var live = liveFor(it, prices);
+          var priceText = it.price || "";
+          var outOfStock = false;
+          if (live) {
+            anyLive = true;
+            if (typeof live.price === "number") priceText = formatMoney(live.price, live.currency);
+            if (live.inStock === false) outOfStock = true;
+          }
+
+          var tr = document.createElement("tr");
+
+          // Photo
+          var pic = el("td", "pic");
+          var box;
+          if (it.photo) {
+            box = document.createElement("img");
+            box.src = it.photo;
+            box.alt = "";
+            box.loading = "lazy";
+            box.referrerPolicy = "no-referrer";
+            box.onerror = function () {
+              var n = el("span", "none", "no image");
+              box.replaceWith(n);
+            };
+          } else {
+            box = el("span", "none", "no image");
+          }
+          if (it.url) { var pa = link(it.url); pa.appendChild(box); pic.appendChild(pa); }
+          else pic.appendChild(box);
+          tr.appendChild(pic);
+
+          // Details
+          var info = el("td");
+          var name = it.url ? link(it.url) : el("span");
+          name.className = "name";
+          name.textContent = it.text;
+          info.appendChild(name);
+
+          if (it.note) {
+            info.appendChild(document.createElement("br"));
+            info.appendChild(el("span", "small", it.note));
+          }
+
+          var line = [];
+          if (priceText) line.push(priceText);
+          var store = storeName(it.url);
+          if (store) line.push(store);
+          if (line.length || outOfStock) {
+            info.appendChild(document.createElement("br"));
+            info.appendChild(document.createTextNode(line.join(" – ")));
+            if (outOfStock) {
+              info.appendChild(document.createTextNode(" "));
+              info.appendChild(el("span", "oos", "(out of stock)"));
+            }
+          }
+
+          if (it._d) {
+            info.appendChild(document.createElement("br"));
+            info.appendChild(el("span", "small", "Added " + formatDate(it._d)));
+            if (!newest || it._d > newest) newest = it._d;
+          }
+
+          tr.appendChild(info);
+          list.appendChild(tr);
+        });
+
+        if (!items.length) {
+          var tr = document.createElement("tr");
+          var td = el("td", null, "No items.");
+          tr.appendChild(td);
+          list.appendChild(tr);
+        }
+
+        var foot = [];
+        if (newest) foot.push("Last updated " + formatDate(newest) + ".");
+        if (anyLive && prices.checked) foot.push("Prices checked " + formatDate(new Date(prices.checked)) + ".");
+        document.getElementById("updated").textContent = foot.join(" ");
+      }
+
+      loadPrices().then(render);
+    })();
+  </script>
+</body>
+</html>
