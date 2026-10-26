@@ -1,264 +1,298 @@
 {
-  "checked": "2026-10-25T14:56:47.239Z",
+  "checked": "2026-10-26T17:22:12.315Z",
   "items": {
     "https://www.goretroid.com/products/retroid-pocket-duo-handheld?variant=54778206093536": {
       "status": "ok",
       "price": 269,
       "currency": null,
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B000FZX93U": {
-      "status": "ok",
+      "status": "blocked",
       "price": 50.47,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B00522F2R2": {
-      "status": "ok",
+      "status": "blocked",
       "price": 129.99,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B073119ZSJ": {
       "status": "ok",
       "price": 56.99,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0FCMHN6GM": {
-      "status": "ok",
+      "status": "blocked",
       "price": 999.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0CKG1JN7L": {
-      "status": "ok",
+      "status": "blocked",
       "price": 294,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0GRGZ3HQ6": {
-      "status": "ok",
+      "status": "blocked",
       "price": 79.99,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0FV3HKG9P": {
-      "status": "ok",
+      "status": "blocked",
       "price": 536.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B00CCHRJ2Q": {
-      "status": "ok",
+      "status": "blocked",
       "price": 239,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0CMQ8XBBR": {
-      "status": "ok",
+      "status": "blocked",
       "price": 309.99,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B07K4RC7X9": {
-      "status": "ok",
+      "status": "blocked",
       "price": 219,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0B2PGNY18": {
-      "status": "ok",
+      "status": "blocked",
       "price": 16.99,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0FKGVMBHB": {
-      "status": "ok",
+      "status": "blocked",
       "price": 159.99,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486253988": {
-      "status": "ok",
+      "status": "blocked",
       "price": 22.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/9918956038": {
-      "status": "ok",
+      "status": "blocked",
       "price": 14.96,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486247899": {
-      "status": "ok",
+      "status": "blocked",
       "price": 27.44,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0DTTBMLTF": {
-      "status": "ok",
+      "status": "blocked",
       "price": 279.79,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0DYJS9FR6": {
-      "status": "ok",
+      "status": "blocked",
       "price": null,
       "currency": "USD",
       "inStock": false,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B001M749TS": {
       "status": "ok",
       "price": 24.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0031TWLNQ": {
-      "status": "ok",
+      "status": "blocked",
       "price": 44.99,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B08HMXMG2H": {
-      "status": "ok",
+      "status": "blocked",
       "price": 94.99,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486233766": {
-      "status": "ok",
+      "status": "blocked",
       "price": 24.38,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486268942": {
-      "status": "ok",
+      "status": "blocked",
       "price": 21.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/3836507463": {
-      "status": "ok",
+      "status": "blocked",
       "price": 19.5,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0DF86G21Z": {
-      "status": "ok",
+      "status": "blocked",
       "price": 26.09,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B00076PIVI": {
-      "status": "ok",
+      "status": "blocked",
       "price": 10.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B08R3QDVGC": {
-      "status": "ok",
+      "status": "blocked",
       "price": 32.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486251888": {
-      "status": "ok",
+      "status": "blocked",
       "price": 22.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486226476": {
-      "status": "ok",
+      "status": "blocked",
       "price": 34.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486247260": {
-      "status": "ok",
+      "status": "blocked",
       "price": 18.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0029U2PBQ": {
-      "status": "ok",
+      "status": "blocked",
       "price": 67.99,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486260356": {
-      "status": "ok",
+      "status": "blocked",
       "price": 24.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486245632": {
-      "status": "ok",
+      "status": "blocked",
       "price": 39.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486262774": {
-      "status": "ok",
+      "status": "blocked",
       "price": 25.3,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/0486292223": {
-      "status": "ok",
+      "status": "blocked",
       "price": 29.95,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B0CDQY96JY": {
-      "status": "ok",
+      "status": "blocked",
       "price": 14.66,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     },
     "https://www.amazon.com/dp/B088N4WZ7S": {
-      "status": "ok",
+      "status": "blocked",
       "price": null,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-10-25T14:56:47.239Z"
+      "checked": "2026-10-25T14:56:47.239Z",
+      "attempted": "2026-10-26T17:22:12.315Z"
     }
   }
 }
