@@ -1,12 +1,12 @@
 {
-  "checked": "2026-11-17T19:49:50.255Z",
+  "checked": "2026-11-18T19:23:52.187Z",
   "items": {
     "https://www.goretroid.com/products/retroid-pocket-duo-handheld?variant=54778206093536": {
       "status": "ok",
       "price": 269,
       "currency": null,
       "inStock": true,
-      "checked": "2026-11-17T19:49:50.255Z"
+      "checked": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B000FZX93U": {
       "status": "blocked",
@@ -14,7 +14,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B00522F2R2": {
       "status": "blocked",
@@ -22,7 +22,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B073119ZSJ": {
       "status": "blocked",
@@ -30,7 +30,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0FCMHN6GM": {
       "status": "blocked",
@@ -38,14 +38,14 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0CKG1JN7L": {
       "status": "ok",
-      "price": 318.99,
+      "price": 289,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-11-17T19:49:50.255Z"
+      "checked": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0GRGZ3HQ6": {
       "status": "blocked",
@@ -53,7 +53,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0FV3HKG9P": {
       "status": "blocked",
@@ -61,7 +61,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B00CCHRJ2Q": {
       "status": "blocked",
@@ -69,7 +69,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0CMQ8XBBR": {
       "status": "blocked",
@@ -77,7 +77,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B07K4RC7X9": {
       "status": "blocked",
@@ -85,7 +85,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0B2PGNY18": {
       "status": "blocked",
@@ -93,7 +93,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0FKGVMBHB": {
       "status": "blocked",
@@ -101,7 +101,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486253988": {
       "status": "blocked",
@@ -109,7 +109,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-13T18:30:12.604Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/9918956038": {
       "status": "blocked",
@@ -117,7 +117,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-15T17:42:14.551Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486247899": {
       "status": "blocked",
@@ -125,7 +125,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0DTTBMLTF": {
       "status": "blocked",
@@ -133,7 +133,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0DYJS9FR6": {
       "status": "blocked",
@@ -141,7 +141,7 @@
       "currency": "USD",
       "inStock": false,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B001M749TS": {
       "status": "blocked",
@@ -149,7 +149,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-15T17:42:14.551Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0031TWLNQ": {
       "status": "blocked",
@@ -157,7 +157,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B08HMXMG2H": {
       "status": "blocked",
@@ -165,7 +165,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486233766": {
       "status": "blocked",
@@ -173,7 +173,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486268942": {
       "status": "blocked",
@@ -181,14 +181,15 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/3836507463": {
-      "status": "ok",
+      "status": "blocked",
       "price": 18.64,
       "currency": "USD",
       "inStock": true,
-      "checked": "2026-11-17T19:49:50.255Z"
+      "checked": "2026-11-17T19:49:50.255Z",
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0DF86G21Z": {
       "status": "blocked",
@@ -196,7 +197,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B00076PIVI": {
       "status": "blocked",
@@ -204,7 +205,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B08R3QDVGC": {
       "status": "blocked",
@@ -212,7 +213,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-12T18:53:25.455Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486251888": {
       "status": "blocked",
@@ -220,7 +221,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486226476": {
       "status": "blocked",
@@ -228,7 +229,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486247260": {
       "status": "blocked",
@@ -236,7 +237,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0029U2PBQ": {
       "status": "blocked",
@@ -244,7 +245,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486260356": {
       "status": "blocked",
@@ -252,7 +253,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486245632": {
       "status": "blocked",
@@ -260,7 +261,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486262774": {
       "status": "blocked",
@@ -268,7 +269,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-14T17:04:52.466Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/0486292223": {
       "status": "blocked",
@@ -276,7 +277,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B0CDQY96JY": {
       "status": "blocked",
@@ -284,7 +285,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-12T18:53:25.455Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     },
     "https://www.amazon.com/dp/B088N4WZ7S": {
       "status": "blocked",
@@ -292,7 +293,7 @@
       "currency": "USD",
       "inStock": true,
       "checked": "2026-11-11T18:41:24.543Z",
-      "attempted": "2026-11-17T19:49:50.255Z"
+      "attempted": "2026-11-18T19:23:52.187Z"
     }
   }
 }
